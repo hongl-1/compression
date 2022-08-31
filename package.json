@@ -1,0 +1,26 @@
+{
+  "name": "tingpng",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "bin": {
+    "tiny": "bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^9.4.0",
+    "fast-glob": "^3.2.11",
+    "prettier": "^2.7.1",
+    "rollup": "^2.79.0",
+    "tinify": "^1.6.1"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^4.1.0"
+  }
+}
