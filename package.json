@@ -1,26 +1,30 @@
 {
-  "name": "tingpng",
+  "name": "tiny-cli",
   "version": "1.0.0",
   "type": "module",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "cross-env NODE_ENV=production rollup -c"
   },
   "bin": {
     "tiny": "bin/index.js"
   },
   "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "commander": "^9.4.0",
-    "fast-glob": "^3.2.11",
+    "@rollup/plugin-json": "^4.1.0",
+    "cross-env": "^7.0.3",
     "prettier": "^2.7.1",
-    "rollup": "^2.79.0",
-    "tinify": "^1.6.1"
+    "rollup": "^2.79.0"
   },
   "dependencies": {
-    "@rollup/plugin-json": "^4.1.0"
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "dayjs": "^1.11.5",
+    "figlet": "^1.5.2",
+    "file-type": "^18.0.0",
+    "tinify": "^1.6.1"
   }
 }

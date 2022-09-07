@@ -1,5 +1,5 @@
 import json from '@rollup/plugin-json'
-
+console.log(process.env.NODE_ENV)
 export default {
   input: 'src/index.js',
   output: [

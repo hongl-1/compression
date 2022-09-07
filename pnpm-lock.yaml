@@ -1,21 +1,21 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@rollup/plugin-json': ^4.1.0
   commander: ^9.4.0
   fast-glob: ^3.2.11
   prettier: ^2.7.1
-  roolup: ^1.0.4
+  rollup: ^2.79.0
   tinify: ^1.6.1
 
 dependencies:
-  '@rollup/plugin-json': 4.1.0
-  commander: 9.4.0
+  '@rollup/plugin-json': 4.1.0_rollup@2.79.0
 
 devDependencies:
+  commander: 9.4.0
   fast-glob: 3.2.11
   prettier: 2.7.1
-  roolup: 1.0.4
+  rollup: 2.79.0
   tinify: 1.6.1
 
 packages:
@@ -41,15 +41,16 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-json/4.1.0:
+  /@rollup/plugin-json/4.1.0_rollup@2.79.0:
     resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0
+      '@rollup/pluginutils': 3.1.0_rollup@2.79.0
+      rollup: 2.79.0
     dev: false
 
-  /@rollup/pluginutils/3.1.0:
+  /@rollup/pluginutils/3.1.0_rollup@2.79.0:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -58,6 +59,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
+      rollup: 2.79.0
     dev: false
 
   /@types/estree/0.0.39:
@@ -74,7 +76,7 @@ packages:
   /commander/9.4.0:
     resolution: {integrity: sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==}
     engines: {node: ^12.20.0 || >=14}
-    dev: false
+    dev: true
 
   /estree-walker/1.0.1:
     resolution: {integrity: sha512-1fMXF3YP4pZZVozF8j/ZLfvnR8NSIljt56UhbZ5PeeDmmGHpgpdwQt7ITlGvYaQukCvuBRMLEiKiYC+oeIg4cg==}
@@ -103,6 +105,13 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
     dev: true
+
+  /fsevents/2.3.2:
+    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    optional: true
 
   /glob-parent/5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -170,10 +179,12 @@ packages:
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
     dev: true
 
-  /roolup/1.0.4:
-    resolution: {integrity: sha512-22uPf/Ga3NHxEWtyisY56g5hP/U8WAVORY8EKsvHeQYq0gYxKXzR+CG3G2+qR2fj2VsWhnHwPRiPcIbbirFDlA==}
-    requiresBuild: true
-    dev: true
+  /rollup/2.79.0:
+    resolution: {integrity: sha512-x4KsrCgwQ7ZJPcFA/SUu6QVcYlO7uRLfLAy0DSA4NS2eG8japdbpM50ToH7z4iObodRYOJ0soneF0iaQRJ6zhA==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
 
   /run-parallel/1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
